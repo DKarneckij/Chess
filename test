@@ -1,0 +1,7 @@
+for ( int i = 1; coords.x-i >=0 & coords.y-i >= 0; i++) {
+
+            player.threatMap[coords.x-i][coords.y-i] = true;
+            if (board.getPiece(coords.x-i, coords.y-i) != null) {
+                break;
+            }
+        }
